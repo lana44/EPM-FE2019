@@ -43,12 +43,6 @@ p {
   flex-direction: row;
   justify-content: space-between; }
 
-figure {
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0; }
-
 .container {
   position: absolute;
   left: 352px;
@@ -124,9 +118,6 @@ button {
     top: 53px;
     display: inline-block; }
     #home nav ul {
-      padding-inline-start: 0;
-      margin-block-start: 0;
-      margin-block-end: 0;
       list-style-type: none; }
       #home nav ul li a {
         font-family: Montserrat;
@@ -162,11 +153,6 @@ button {
   #dots li.active {
     background: #ffffff;
     opacity: 1; }
-
-:-webkit-any(article, aside, nav, section) h1,
-h2, h3 {
-  margin-block-start: 0;
-  margin-block-end: 0; }
 
 #welcome {
   height: 897px; }
@@ -227,7 +213,7 @@ h2, h3 {
     #welcome .welcome__icon .Drawer-Icon {
       padding: 24px 25px 23px 26px; }
     #welcome .welcome__icon img {
-      border-radius: none; }
+      border-radius: 0; }
 
 #project .box {
   background-color: #efefef; }
@@ -238,7 +224,8 @@ h2, h3 {
   margin-left: 44px; }
 #project img {
   margin-bottom: 31px;
-  height: 485px; }
+  height: 485px;
+  width: 350px; }
 #project h2 {
   margin-bottom: 55px; }
 #project h3 {
@@ -258,10 +245,6 @@ h2, h3 {
   background-color: #fefefe; }
   #project button:hover, #project .hover:hover button, .hover:hover #project button {
     background-color: #62497c; }
-
-p {
-  margin-block-start: 0;
-  margin-block-end: 0; }
 
 .hover:hover {
   background-color: #ffe26d; }
@@ -398,6 +381,8 @@ p {
     background-color: #62497c; }
 
 footer {
+  height: 653px;
+  clear: left;
   padding-top: 78.8px;
   width: 1400px;
   position: relative;
@@ -479,7 +464,8 @@ footer {
   width: 311px;
   background-color: #62497c;
   color: #fefefe;
-  margin-top: -20px; }
+  margin-top: -20px;
+  margin-bottom: 45px; }
 
 #blog {
   height: 640px; }
@@ -544,7 +530,10 @@ footer {
   height: 55px;
   margin-bottom: 22px;
   padding: 0px;
-  margin-top: 0px; }
+  margin-top: 0px;
+  background-color: #ffe26d; }
   #newsletter button:hover, #newsletter .hover:hover button, .hover:hover #newsletter button {
     background-color: #62497c;
     color: #fefefe; }
+
+/*# sourceMappingURL=style.css.map */
