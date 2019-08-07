@@ -1,3 +1,13 @@
+.button, .title__column, .pricing__header {
+  text-transform: uppercase; }
+
+.footer__contact {
+  list-style-type: none;
+  width: 120px;
+  margin: 0 auto; }
+  .footer__contact li {
+    display: inline-block; }
+
 section {
   width: 1400px;
   position: relative;
@@ -111,7 +121,8 @@ button {
     letter-spacing: -2.95px;
     text-align: left;
     color: #ffffff;
-    margin-right: 187px; }
+    margin-right: 187px;
+    text-transform: uppercase; }
   #home nav {
     width: 422px;
     height: 10px;
@@ -132,8 +143,10 @@ button {
         text-decoration: none;
         margin-right: 24px;
         display: inline-block; }
-  #home .menu li {
-    display: inline-block; }
+  #home .menu {
+    text-transform: uppercase; }
+    #home .menu li {
+      display: inline-block; }
   #home .active {
     color: #ffe26d; }
 

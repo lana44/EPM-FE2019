@@ -1,3 +1,18 @@
+.button, .title__column, .pricing__header{
+  text-transform: uppercase;
+}
+
+.footer__contact{
+  list-style-type: none;
+  width: 120px;
+  margin: 0 auto;
+  li{
+    display: inline-block;
+  }
+}
+
+
+
 section {
   width: 1400px;
   position: relative;
@@ -119,6 +134,7 @@ button {
     text-align: left;
     color: #ffffff;
     margin-right: 187px;
+    text-transform: uppercase;
   }
   nav {
     width: 422px;
@@ -143,8 +159,10 @@ button {
       }
     }
   }
-  .menu li {
-    display: inline-block;
+  .menu {
+    text-transform: uppercase;
+    li {
+    display: inline-block;}
   }
   .active {
     color: #ffe26d;
