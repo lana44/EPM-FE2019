@@ -1,52 +1,60 @@
-.button, .title__column, .pricing__header {
+.section__title {
+  font-family: Montserrat;
+  font-size: 44px;
+  font-weight: bold;
+  line-height: 0.92;
+  text-align: center;
+  color: #040405;
+  padding: 70px 0 48px 0; }
+
+.title__column {
+  font-family: Montserrat;
+  font-size: 14.5px;
+  font-weight: bold;
+  line-height: 2.79;
+  text-align: center;
+  color: #62497c;
   text-transform: uppercase; }
 
-.footer__contact {
-  list-style-type: none;
-  width: 120px;
-  margin: 0 auto; }
-  .footer__contact li {
-    display: inline-block; }
+.item__mini, .footer a {
+  font-family: Helvetica;
+  font-size: 13.5px;
+  line-height: 1.74;
+  text-align: center;
+  color: rgba(4, 4, 5, 0.5); }
+
+.button, .pricing__header {
+  text-transform: uppercase; }
+
+.footer {
+  color: #040405; }
+  .footer i {
+    margin: 10px 5px;
+    color: #000000;
+    font-size: 16px; }
+  .footer a {
+    text-decoration: none;
+    color: #040405; }
+  .footer .item__mini {
+    color: #040405; }
+  .footer .footer__contact {
+    list-style-type: none;
+    width: 120px;
+    margin: 0 auto; }
+    .footer .footer__contact li {
+      display: inline-block; }
+  .footer .footer__title {
+    font-family: Montserrat;
+    font-size: 10.5px;
+    font-weight: bold;
+    color: #040405;
+    margin-bottom: 14px;
+    text-transform: uppercase; }
 
 section {
   width: 1400px;
   position: relative;
   margin: 0 auto; }
-
-h2 {
-  font-family: Montserrat;
-  font-size: 44px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 0.92;
-  letter-spacing: normal;
-  text-align: center;
-  color: #040405; }
-
-h3 {
-  text-transform: uppercase;
-  font-family: Montserrat;
-  font-size: 14.5px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 2.79;
-  letter-spacing: normal;
-  text-align: center;
-  color: #62497c; }
-
-p {
-  opacity: 0.5;
-  font-family: Helvetica;
-  font-size: 13.5px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.74;
-  letter-spacing: normal;
-  text-align: center;
-  color: rgba(4, 4, 5, 0.5); }
 
 .box {
   display: flex;
@@ -88,32 +96,20 @@ button {
     font-family: Montserrat;
     font-size: 39px;
     font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
     text-align: left;
     color: #ffffff;
     margin-bottom: 33px; }
   #home h2 {
-    width: 417px;
-    height: 43px;
     top: 313px;
     font-family: Roboto;
     font-size: 19px;
     font-weight: 100;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
     text-align: left;
     color: #ffffff;
     margin-bottom: 35px; }
   #home .zippy {
     position: relative;
     display: inline-block;
-    width: 77px;
-    height: 21px;
     font-family: Montserrat;
     font-size: 29.5px;
     font-weight: bold;
@@ -134,10 +130,7 @@ button {
         font-family: Montserrat;
         font-size: 10.5px;
         font-weight: bold;
-        font-style: normal;
-        font-stretch: normal;
         line-height: 0.67;
-        letter-spacing: normal;
         text-align: left;
         color: #ffffff;
         text-decoration: none;
@@ -169,18 +162,12 @@ button {
 
 #welcome {
   height: 897px; }
-  #welcome h2 {
-    margin-top: 85.4px; }
   #welcome article {
     width: 436px;
     height: 165px;
     font-family: Roboto;
     font-size: 29.5px;
     font-weight: 100;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
     text-align: left;
     color: #040405;
     margin-top: 74px;
@@ -199,7 +186,6 @@ button {
     width: 156px;
     text-align: center; }
     #welcome .column h3 {
-      height: 12px;
       margin-bottom: 35px; }
     #welcome .column p {
       margin-bottom: 38px;
@@ -230,8 +216,6 @@ button {
 
 #project .box {
   background-color: #efefef; }
-#project h2 {
-  margin-bottom: 55px; }
 #project figcaption,
 #project button {
   margin-left: 44px; }
@@ -239,13 +223,10 @@ button {
   margin-bottom: 31px;
   height: 485px;
   width: 350px; }
-#project h2 {
-  margin-bottom: 55px; }
 #project h3 {
   text-align: left;
   margin-bottom: 22px;
-  color: #040405;
-  height: 13px; }
+  color: #040405; }
 #project p {
   text-align: left;
   width: 283px;
@@ -262,9 +243,6 @@ button {
 .hover:hover {
   background-color: #ffe26d; }
 
-#pricing h2 {
-  margin-top: 86px;
-  margin-bottom: 54px; }
 #pricing .pricing__header {
   font-size: 14.5px;
   font-weight: bold;
@@ -306,9 +284,6 @@ button {
 #video {
   background-color: #62497c;
   color: #fefefe; }
-  #video h2 {
-    padding-top: 87px;
-    margin-bottom: 48px; }
   #video .video__main {
     overflow: hidden;
     width: 1400px; }
@@ -337,18 +312,12 @@ button {
         font-family: Montserrat;
         font-size: 10.5px;
         font-weight: bold;
-        font-style: normal;
-        font-stretch: normal;
         line-height: 0.67;
-        letter-spacing: normal;
         opacity: 1; }
 
 #team {
   height: 780px;
   background-color: #fefefe; }
-  #team h2 {
-    padding-top: 76px;
-    padding-bottom: 48px; }
   #team figure {
     background-color: #fefefe;
     text-align: center; }
@@ -356,11 +325,7 @@ button {
       opacity: 0.39;
       font-family: Montserrat;
       font-size: 14.5px;
-      font-weight: normal;
-      font-style: normal;
-      font-stretch: normal;
       line-height: 0.48;
-      letter-spacing: normal;
       text-align: center;
       color: rgba(4, 4, 5, 0.39);
       margin-bottom: 64.1px; }
@@ -374,9 +339,6 @@ button {
   height: 783px;
   margin-top: 80px;
   background-color: #efefef; }
-  #life h2 {
-    padding-bottom: 44px;
-    padding-top: 78px; }
   #life .life__image {
     margin-bottom: 13px; }
   #life .life__slider {
@@ -394,7 +356,6 @@ button {
     background-color: #62497c; }
 
 footer {
-  height: 653px;
   clear: left;
   padding-top: 78.8px;
   width: 1400px;
@@ -403,39 +364,10 @@ footer {
   text-align: center; }
   footer .box {
     justify-content: space-around; }
-  footer p {
-    font-family: Montserrat;
-    font-size: 10.5px;
-    font-weight: bold;
-    color: #040405;
-    margin-bottom: 14px;
-    text-transform: uppercase; }
-  footer address {
-    font-family: Helvetica;
-    font-size: 13.5px;
-    line-height: 1.74;
-    text-align: center;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    color: #040405; }
   footer .box {
-    margin-bottom: 129px; }
+    margin-bottom: 40px; }
     footer .box .column2 {
       width: 140px; }
-  footer a {
-    font-family: Helvetica;
-    font-size: 13.5px;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.74;
-    letter-spacing: normal;
-    text-align: center;
-    color: #040405;
-    text-decoration: none; }
-  footer i {
-    margin: 10px 5px; }
 
 #contact {
   background-color: #ffe26d; }
@@ -447,8 +379,7 @@ footer {
   outline: none; }
 
 .contact__form h2 {
-  text-align: left;
-  padding: 51px 0 32px 0; }
+  text-align: left; }
 .contact__form ul {
   list-style-type: none;
   list-style-position: outside;
@@ -478,7 +409,7 @@ footer {
   background-color: #62497c;
   color: #fefefe;
   margin-top: -20px;
-  margin-bottom: 45px; }
+  margin-bottom: 8px; }
 
 #blog {
   height: 640px; }
@@ -488,8 +419,6 @@ footer {
     background-color: #ffe26d;
     margin-bottom: 88px;
     color: #323232; }
-  #blog h2 {
-    margin: 72px 0 55px 0; }
   #blog figure {
     background-color: #fefefe; }
     #blog figure figcaption {
@@ -503,8 +432,7 @@ footer {
       margin-bottom: 36px; }
     #blog .blog__column h3 {
       color: #040405;
-      padding: 0 19px 13px 19px;
-      line-height: normal; }
+      padding: 0 19px 13px 19px; }
     #blog .blog__column .date {
       margin-bottom: 16px; }
     #blog .blog__column p {
@@ -519,7 +447,6 @@ footer {
   width: 100%;
   height: 100%; }
 #newsletter h2 {
-  padding: 57px 0 29px 0;
   color: #ffffff; }
 #newsletter form {
   text-align: center; }
