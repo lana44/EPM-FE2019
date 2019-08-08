@@ -1,0 +1,22 @@
+$btn_small: 81px;
+$btn_medium: 125px;
+$btn_large: 162px;
+
+.button {
+    height: 43px;
+    border-radius: 2.9px;
+    border-style: none;
+    text-transform: uppercase;
+    background-color: #ffe26d;
+    font-size: 10.5px;
+    font-weight: bold;
+    line-height: 0.67;
+    color: #323232;
+    width: $btn_medium;
+    &:hover {
+      background-color: #62497c;
+      color: white;
+    }
+  }
+
+

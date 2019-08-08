@@ -8,45 +8,47 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles/reset.css">
         <link rel="stylesheet" href="styles/fontello.css">
-        <link rel="stylesheet" href="styles/style.css"/>
+        <link rel="stylesheet" href="styles/style.css" />
 </head>
 
 <body>
-        <section id="home">
+        <section id="home" class="home">
 
                 <img src="img/image.jpg" srcset="img/image@2x.jpg 2x,
              img/image@3x.jpg 3x" class="Image" alt="zippy mockup">
                 <div class="container">
-                        <div class="row">
-                                <header>
 
-                                        <div class="zippy">zippy</div>
-                                        <nav>
-                                                <ul class="menu">
-                                                        <li><a href="#home" class="active">home</a></li>
-                                                        <li><a href="#project">projects</a></li>
-                                                        <li><a href="#pricing">pricing</a></li>
-                                                        <li><a href="#team">team</a></li>
-                                                        <li><a href="#blog">blog</a></li>
-                                                        <li><a href="#contact">contact</a></li>
-                                                </ul>
-                                        </nav>
+                        <header>
 
-                                </header>
+                                <div class="logo">zippy</div>
+                                <nav class="slider__menu">
+                                        <ul class="menu">
+                                                <li><a href="#home" class="active">home</a></li>
+                                                <li><a href="#project">projects</a></li>
+                                                <li><a href="#pricing">pricing</a></li>
+                                                <li><a href="#team">team</a></li>
+                                                <li><a href="#blog">blog</a></li>
+                                                <li><a href="#contact">contact</a></li>
+                                        </ul>
+                                </nav>
 
+                        </header>
 
-                                <h1>One page promising to fill all your needs!</h1>
-                                <h2>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor
-                                        aliquet.</h2>
-                                <button class="button left">learn more</button>
-                                <button class="button right">learn more</button>
-                                <ul id="dots">
-                                        <li></li>
-                                        <li class="active"></li>
-                                        <li></li>
-                                        <li></li>
-                                </ul>
+                        <div class="slider__item">
+                                <h3 class="slider__title">One page promising to fill all your needs!</h1>
+                                        <h2 class="slider__text">This is Photoshop's version of Lorem Ipsum. Proin
+                                                gravida nibh vel velit auctor
+                                                aliquet.</h2>
+                                        <button class="button left">learn more</button>
+                                        <button class="button right">learn more</button>
+                                        <ul id="dots" class="dots">
+                                                <li></li>
+                                                <li class="active"></li>
+                                                <li></li>
+                                                <li></li>
+                                        </ul>
                         </div>
+
                 </div>
 
 
@@ -54,24 +56,27 @@
         </section>
 
 
-        <section id="welcome">
+        <section id="welcome" class="welcome">
                 <div class="container">
-
-                        <h2 class="section__title">Welcome to Zippy</h2>
-                        <article>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor
-                                aliquet. Aenean sol&shy;licitudin, lorem quis bibendum auctor.</article>
-                        <aside><img src="img/umbrella-icon.svg" class="Umbrella-Icon" alt="umbrella"></aside>
-
+                        <div class="welcome__article">
+                                <h2 class="section__title">Welcome to Zippy</h2>
+                                <p class="welcome__text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh
+                                        vel velit auctor
+                                        aliquet. Aenean sol&shy;licitudin, lorem quis bibendum auctor.</p>
+                                <aside class="welcome__aside"><img src="img/umbrella-icon.svg" class="umbrella__icon"
+                                                alt="umbrella"></aside>
+                        </div>
                         <div class="box" style="clear:both;">
                                 <div class="column">
                                         <div class="welcome__icon">
                                                 <img src="img/bell-icon.png" srcset="img/bell-icon@2x.png 2x,
-                                                                img/bell-icon@3x.png 3x" class="Bell-Icon"
+                                                                img/bell-icon@3x.png 3x" class="bell__icon"
                                                         alt="bell-icon">
 
                                         </div>
                                         <h3 class="title__column">lorem ipsum</h3>
-                                        <p class="item__mini">Lorem ipsum dolor sit amet, consectetur adipi&shy;scing elit. Pellentesque
+                                        <p class="item__mini">Lorem ipsum dolor sit amet, consectetur adipi&shy;scing
+                                                elit. Pellentesque
                                                 vel
                                                 odio vel
                                                 felis placerat pharetra ut vitae felis. </p>
@@ -81,12 +86,13 @@
                                 <div class="column">
                                         <div class="welcome__icon">
                                                 <img src="img/envelop-icon.png" srcset="img/envelop-icon@2x.png 2x,
-             img/envelop-icon@3x.png 3x" class="Envelop-Icon" alt="welcome-icon">
+             img/envelop-icon@3x.png 3x" class="envelop__icon" alt="welcome-icon">
 
 
                                         </div>
                                         <h3 class="title__column">dolor sit</h3>
-                                        <p class="item__mini">Lorem ipsum dolor sit amet, consectetur adipi&shy;scing elit. Pellentesque
+                                        <p class="item__mini">Lorem ipsum dolor sit amet, consectetur adipi&shy;scing
+                                                elit. Pellentesque
                                                 vel
                                                 odio vel
                                                 felis placerat pharetra ut vitae felis. </p>
@@ -96,12 +102,13 @@
                                 <div class="column">
                                         <div class="welcome__icon">
                                                 <img src="img/drawer-icon.png" srcset="img/drawer-icon@2x.png 2x,
-             img/drawer-icon@3x.png 3x" class="Drawer-Icon" alt="drawer-icon">
+             img/drawer-icon@3x.png 3x" class="drawer__icon" alt="drawer-icon">
 
 
                                         </div>
                                         <h3 class="title__column">consecteture</h3>
-                                        <p class="item__mini">Lorem ipsum dolor sit amet, consectetur adipi&shy;scing elit. Pellentesque
+                                        <p class="item__mini">Lorem ipsum dolor sit amet, consectetur adipi&shy;scing
+                                                elit. Pellentesque
                                                 vel
                                                 odio vel
                                                 felis placerat pharetra ut vitae felis. </p>
@@ -115,17 +122,17 @@
         </section>
 
 
-        <section id="project">
+        <section id="project" class="project">
                 <h2 class="section__title">Projects</h2>
                 <div class="box">
-                        <div class="column  hover">
+                        <div class="column">
                                 <figure>
-
                                         <img src="img/project1.png" srcset="img/project1@2x.png 2x,
                         img/project1@3x.png 3x" alt="project1">
-                                        <figcaption>
+                                        <figcaption class="project__about">
                                                 <h3 class="title__column">project name</h3>
-                                                <p class="item__mini">Lorem ipsum dolor sit amet, consectetur adipi&shy;scing elit.
+                                                <p class="item__mini">Lorem ipsum dolor sit amet, consectetur
+                                                        adipi&shy;scing elit.
                                                         Pellentesque
                                                         vel
                                                         odio vel felis
@@ -133,16 +140,17 @@
                                         </figcaption>
 
                                 </figure>
-                                <button>launch case study</button>
+                                <button class="button">launch case study</button>
                         </div>
-                        <div class="column  hover">
+                        <div class="column">
                                 <figure>
 
                                         <img src="img/project2.jpg" srcset="img/project2@2x.jpg 2x,
                                 img/project2@3x.jpg 3x" alt="project2">
-                                        <figcaption>
+                                        <figcaption class="project__about">
                                                 <h3 class="title__column">project name</h3>
-                                                <p class="item__mini">Lorem ipsum dolor sit amet, consectetur adipi&shy;scing elit.
+                                                <p class="item__mini">Lorem ipsum dolor sit amet, consectetur
+                                                        adipi&shy;scing elit.
                                                         Pellentesque
                                                         vel
                                                         odio vel felis
@@ -151,14 +159,15 @@
 
                                 </figure><button class="button">launch case study</button>
                         </div>
-                        <div class="column hover">
+                        <div class="column">
                                 <figure>
 
                                         <img src="img/project3.jpg" srcset="img/project3@2x.jpg 2x,
                                         img/project3@3x.jpg 3x" alt="project3">
-                                        <figcaption>
+                                        <figcaption class="project__about">
                                                 <h3 class="title__column">project name</h3>
-                                                <p class="item__mini">Lorem ipsum dolor sit amet, consectetur adipi&shy;scing elit.
+                                                <p class="item__mini">Lorem ipsum dolor sit amet, consectetur
+                                                        adipi&shy;scing elit.
                                                         Pellentesque
                                                         vel
                                                         odio vel felis
@@ -167,14 +176,15 @@
 
                                 </figure><button class="button">launch case study</button>
                         </div>
-                        <div class="column hover">
+                        <div class="column">
                                 <figure>
 
                                         <img src="img/project4.jpg" srcset="img/project4@2x.jpg 2x,
                                                 img/project4@3x.jpg 3x" alt="project4">
-                                        <figcaption>
+                                        <figcaption class="project__about">
                                                 <h3 class="title__column">project name</h3>
-                                                <p class="item__mini">Lorem ipsum dolor sit amet, consectetur adipi&shy;scing elit.
+                                                <p class="item__mini">Lorem ipsum dolor sit amet, consectetur
+                                                        adipi&shy;scing elit.
                                                         Pellentesque
                                                         vel
                                                         odio vel felis
@@ -187,10 +197,10 @@
 
         </section>
 
-        <section id="pricing">
+        <section id="pricing" class="pricing">
 
                 <h2 class="section__title">Pricing Table</h2>
-                <table class="box">
+                <table class="table">
                         <tr class="pricing__header">
                                 <td>standart plan</td>
                                 <td>business plan</td>
@@ -216,141 +226,114 @@
                                         Unlimited Messages/month<br>
                                         Ads Free</td>
                         </tr>
-                        <tr class="pricing__button">
+                        <tr>
                                 <td> <button class="button">buy</button></td>
                                 <td> <button class="button">buy</button></td>
-                                <td class="border__hidden"> <button>buy</button></td>
+                                <td class="border__hidden"> <button class="button">buy</button></td>
                         </tr>
 
                 </table>
 
         </section>
 
-        <section id="video">
-
+        <section id="video" class="video">
                 <h2 class="section__title">Video Projects</h2>
-                <div class="video__main">
-                        <div class="box">
-                                <figure><img src="img/video-image1.jpg" srcset="img/video-image1@2x.jpg 2x,
-                                                                img/video-image1@3x.jpg 3x" class="Video-Image"
-                                                alt="video1">
-                                        <figcaption class="hide">video title<p>9:10</p>
-                                        </figcaption>
-                                </figure>
-                                <figure><img src="img/video-image2.jpg" srcset="img/video-image2@2x.jpg 2x,
-                                                                img/video-image2@3x.jpg 3x" class="Video-Image"
-                                                alt="video2">
-                                        <figcaption>video title<p>9:10</p>
-                                        </figcaption>
-                                </figure>
-                                <figure><img src="img/video-image3.jpg" srcset="img/video-image3@2x.jpg 2x,
-                                                                img/video-image3@3x.jpg 3x" class="Video-Image"
-                                                alt="video3">
-                                        <figcaption>video title<p>9:10</p>
-                                        </figcaption>
-                                </figure>
+                <div class="video__main box">
+                        <div class="video__item">
+                                <div class="image-container">
+                                        <img src="img/video-image1.png" alt="video1">
+                                        <div class="after"><img src="img/play-icon.png"></div>
+                                </div>
+                                <div class="video__about">
+                                        <p>video title</p>
+                                        <p class="video__right">9:10</p>
+                                </div>
+                        </div>
+                        <div class="video__item">
+                                <div class="image-container">
+                                        <img src="img/video-image2.jpg" alt="video2">
+                                        <div class="after"><img src="img/play-icon.png"></div>
+                                </div>
+                                <div class="video__about">
+                                        <p>video title</p>
+                                        <p class="video__right">9:10</p>
+                                </div>
+                        </div>
+                        <div class="video__item">
+                                <div class="image-container">
+                                        <img src="img/video-image3.jpg" alt="video3">
+                                        <div class="after"><img src="img/play-icon.png"></div>
+                                </div>
+                                <div class="video__about">
+                                        <p>video title</p>
+                                        <p class="video__right">9:10</p>
+                                </div>
                         </div>
                 </div>
 
         </section>
 
-        <section id="team">
+        <section id="team" class="team">
                 <div class="container">
                         <h2 class="section__title">Zippy Team</h2>
                         <div class="box">
+                                <div class="team__person title__column"><img src="img/team1.jpg" alt="Creative Head">
+                                        <h3>Sara Johnson</h3>
+                                        <p>Creative Head</p>
+                                </div>
 
-                                <figure><img src="img/team1.jpg" srcset="img/team1@2x.jpg 2x,
-             img/team1@3x.jpg 3x" class="Image" alt="Creative Head">
-                                        <figcaption>
-                                                <h3 class="title__column">Sara Johnson</h3>
-                                                <p>Creative Head</p>
-                                        </figcaption>
-                                </figure>
+                                <div class="team__person title__column"><img src="img/team2.jpg" alt="Art Director">
+                                        <h3>Matt Alex</h3>
+                                        <p>Art Director</p>
+                                </div>
 
-                                <figure><img src="img/team2.jpg" srcset="img/team2@2x.jpg 2x,
-             img/team2e@3x.jpg 3x" class="Image" alt="Art Director">
-                                        <figcaption>
-                                                <h3 class="title__column">Matt Alex</h3>
-                                                <p>Art Director</p>
-                                        </figcaption>
-                                </figure>
-
-                                <figure><img src="img/team3.jpg" srcset="img/team3@2x.jpg 2x,
-             img/team3@3x.jpg 3x" class="Image" alt="Senior Designer">
-                                        <figcaption>
-                                                <h3 class="title__column">Chris Philips</h3>
-                                                <p>Senior Designer</p>
-                                        </figcaption>
-                                </figure>
-
-
+                                <div class="team__person title__column"><img src="img/team3.jpg" alt="Senior Designer">
+                                        <h3>Chris Philips</h3>
+                                        <p>Senior Designer</p>
+                                </div>
                         </div>
                         <div class="box">
-
-                                <figure><img src="img/team4.jpg" srcset="img/team4@2x.jpg 2x,
-             img/team4@3x.jpg 3x" class="Image" alt="Marketing Manager">
-                                        <figcaption>
-                                                <h3 class="title__column">Jimmy Smith</h3>
-                                                <p>Marketing Manager</p>
-                                        </figcaption>
-                                </figure>
-
-                                <figure><img src="img/team5.jpg" srcset="img/team5@2x.jpg 2x,
-             img/team5@3x.jpg 3x" class="Image" alt="SEO MONSTER">
-                                        <figcaption>
-                                                <h3 class="title__column">Aliza</h3>
-                                                <p>SEO MONSTER</p>
-                                        </figcaption>
-                                </figure>
-
-
-                                <figure><img src="img/team6.jpg" srcset="img/team6@2x.jpg 2x,
-             img/team6@3x.jpg 3x" class="Image" alt="Senior Designer">
-                                        <figcaption>
-                                                <h3 class="title__column">Celien john</h3>
-                                                <p>Senior Designer</p>
-                                        </figcaption>
-                                </figure>
-
-
+                                <div class="team__person title__column"><img src="img/team4.jpg" alt="Marketing Manager">
+                                        <h3>Jimmy Smith</h3>
+                                        <p>Marketing Manager</p>
+                                </div>
+                                <div class="team__person title__column"><img src="img/team5.jpg" alt="SEO MONSTER">
+                                        <h3>Aliza</h3>
+                                        <p>SEO MONSTER</p>
+                                </div>
+                                <div class="team__person title__column"><img src="img/team6.jpg" alt="Senior Designer">
+                                        <h3>Celien john</h3>
+                                        <p>Senior Designer</p>
+                                </div>
                         </div>
                 </div>
         </section>
 
-        <section id="life">
+        <section id="life" class="life">
                 <div class="container">
                         <h2 class="section__title">Life in Zippy</h2>
-                        <img src="img/image_3.jpg" srcset="img/image_3@2x.jpg 2x,
-             img/image_3@3x.jpg 3x" class="life__image" alt="gallery">
-                        <div class="life__slider">
+                        <img src="img/image_3.jpg" class="life__image" alt="gallery">
+                        <div class="box">
                                 <img src="img/left-arrow.svg" class="Left-Arrow strelka" alt="leftarrow">
-                                <img src="img/life1.jpg" srcset="img/life1@2x.jpg 2x,
-                                                img/life1@3x.jpg 3x" class="Image" alt="arrow">
-                                <img src="img/life2.jpg" srcset="img/life2@2x.jpg 2x,
-                                                img/life2@3x.jpg 3x" class="Image" alt="life2">
-                                <img src="img/life3.jpg" srcset="img/life3@2x.jpg 2x,
-                                                img/life3@3x.jpg 3x" class="Image" alt="life3">
-                                <img src="img/life4.jpg" srcset="img/life4@2x.jpg 2x,
-                                                img/life4@3x.jpg 3x" class="Image" alt="life4">
-                                <img src="img/life5.jpg" srcset="img/life5@2x.jpg 2x,
-                                                img/life5@3x.jpg 3x" class="Image" alt="life5">
+                                <img src="img/life1.jpg" alt="arrow">
+                                <img src="img/life2.jpg" alt="life2">
+                                <img src="img/life3.jpg" alt="life3">
+                                <img src="img/life4.jpg" alt="life4">
+                                <img src="img/life5.jpg" alt="life5">
                                 <img src="img/right-arrow.svg" class="Right-Arrow strelka" alt="rightarrow">
                         </div>
                 </div>
         </section>
 
-        <section id="newsletter">
+        <section id="newsletter" class="newsletter">
                 <div class="image-container">
-                        <img src="img/news.jpg" srcset="img/news@2x.jpg 2x,
-                        img/news@3x.jpg 3x" class="Image" alt="newsletter">
-
+                        <img src="img/news.jpg" alt="newsletter">
                         <div class="container after">
                                 <h2 class="section__title">Newsletter Signup</h2>
-                                <form action="#" class="contact__form" method="post" name="contact_form">
-                                        <input type="email" name="email" placeholder="abc@example.com">
+                                <form class="news__form" action="#" class="contact__form" method="post" name="contact_form">
+                                        <input class="news__input" type="email" name="email" placeholder="abc@example.com">
                                         <button class="button" type="submit" name="button">sign up</button><br>
-
-                                        <button class="button right" type="submit" name="button">sign up</button>
+                                        <button class="button button__right" type="submit" name="button">sign up</button>
                                 </form>
                         </div>
                 </div>
@@ -358,17 +341,17 @@
 
         </section>
 
-        <section id="blog">
+        <section id="blog" class="blog">
                 <div class="container">
                         <h2 class="section__title">Blog</h2>
                         <div class="blog__column">
                                 <figure>
-                                        <img src="img/blog1.jpg" srcset="img/blog1@2x.jpg 2x,
-                                img/blog1@3x.jpg 3x" class="Image" alt="blog">
+                                        <img src="img/blog1.jpg" alt="blog">
                                         <figcaption>
                                                 <h3 class="title__column">Lorem ipsum dolor sit amet</h3>
                                                 <p class="date item__mini">15 Jan, 2015</p>
-                                                <p class="item__mini">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+                                                <p class="item__mini">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                        elit. Pellentesque
                                                         vel odio vel felis
                                                         placerat pharetra ut vitae felis. </p>
                                         </figcaption>
@@ -378,12 +361,12 @@
                         </div>
                         <div class="blog__column">
                                 <figure>
-                                        <img src="img/blog2.jpg" srcset="img/blog2@2x.jpg 2x,
-                                img/blog2@3x.jpg 3x" class="Image" alt="blog">
+                                        <img src="img/blog2.jpg" alt="blog">
                                         <figcaption>
                                                 <h3 class="title__column">Lorem ipsum dolor sit amet</h3>
                                                 <p class="date item__mini">15 Jan, 2015</p>
-                                                <p class="item__mini">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+                                                <p class="item__mini">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                        elit. Pellentesque
                                                         vel odio vel felis
                                                         placerat pharetra ut vitae felis. </p>
                                         </figcaption>
@@ -394,12 +377,12 @@
 
                         <div class="blog__column">
                                 <figure>
-                                        <img src="img/blog3.jpg" srcset="img/blog3@2x.jpg 2x,
-                                img/blog3@3x.jpg 3x" class="Image" alt="blog">
+                                        <img src="img/blog3.jpg" alt="blog">
                                         <figcaption>
                                                 <h3 class="title__column">Lorem ipsum dolor sit amet</h3>
                                                 <p class="date item__mini">15 Jan, 2015</p>
-                                                <p class="item__mini">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+                                                <p class="item__mini">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                        elit. Pellentesque
                                                         vel odio vel felis
                                                         placerat pharetra ut vitae felis. </p>
                                         </figcaption>
@@ -413,37 +396,37 @@
 
 
 
-        <section id="contact">
+        <section id="contact" class="contact">
 
 
                 <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7cc5d451c2c1cfead25a6afb715ce9b9a4370766c287cb06e27fddff58234738&amp;source=constructor"
                         width="693" height="653"></iframe>
-                <div>
+                
                         <form class="contact__form" action="#" method="post" name="contact_form">
-                                <ul>
+                                <ul class="contact__ul">
                                         <li>
                                                 <h2 class="section__title">Contact</h2>
                                         </li>
                                         <li>
                                                 <label for="name">Name</label>
-                                                <input type="text" name="name" id="name" />
+                                                <input class="contact__input" type="text" name="name" id="name" />
                                         </li>
                                         <li>
                                                 <label for="email">email address</label>
-                                                <input type="email" name="email" id="email" />
+                                                <input class="contact__input" type="email" name="email" id="email" />
                                         </li>
                                         <li>
                                                 <label for="subject">subject</label>
-                                                <input type="text" name="subject" id="subject" />
+                                                <input class="contact__input" type="text" name="subject" id="subject" />
                                         </li>
                                         <li>
                                                 <label for="message">message</label>
-                                                <input class="textarea" type="text" name="message" id="message">
+                                                <input class="textarea contact__input" type="text" name="message" id="message">
                                         </li>
                                 </ul>
                                 <button class="button" type="submit">send</button>
                         </form>
-                </div>
+                
 
         </section>
 
@@ -451,24 +434,24 @@
                 <div class="container">
 
                         <div class="box">
-                                <div class="column2">
+                                <div class="footer__column">
                                         <p class="footer__title">Office Address</p>
                                         <address class="item__mini">Lorem Ipsum dolor, 234
                                                 1200 Consecture
                                                 Adipsching</address>
                                 </div>
-                                <div class="column2">
+                                <div class="footer__column">
                                         <p class="footer__title">Follow us</p>
                                         <ul class="footer__contact">
-                                                <li><a href=#><i class="icon-behance"></i></a></li>
-                                                <li> <a href=#><i class="icon-twitter"></i></a></li>
-                                                <li><a href=#> <i class="icon-linkedin"></i></a></li>
-                                                <li><a href=#><i class="icon-facebook"></i></a></li>
-                                                <li><a href=#><i class="icon-gplus"></i></a></li>
-                                                <li> <a href=#><i class="icon-tumblr"></i></a></li>
+                                                <li><a href=#><i class="icon-behance footer__icon"></i></a></li>
+                                                <li> <a href=#><i class="icon-twitter footer__icon"></i></a></li>
+                                                <li><a href=#> <i class="icon-linkedin footer__icon"></i></a></li>
+                                                <li><a href=#><i class="icon-facebook footer__icon"></i></a></li>
+                                                <li><a href=#><i class="icon-gplus footer__icon"></i></a></li>
+                                                <li> <a href=#><i class="icon-tumblr footer__icon"></i></a></li>
                                         </ul>
                                 </div>
-                                <div class="column2">
+                                <div class="footer__column">
                                         <p class="footer__title">Contact us</p>
                                         <ul class="footer__contact">
                                                 <li><a href="tel:+123456789">+123 456 789</a></li>
