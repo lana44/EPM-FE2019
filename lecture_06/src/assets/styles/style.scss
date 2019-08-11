@@ -26,7 +26,7 @@ section {
   justify-content: space-between;
 }
 
-.box__column{
+.box__column, .pricing__column{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -98,7 +98,7 @@ section {
       width: 472px;
     }
    .button{
-      margin-top:1000px;
+      margin-top:400px;
     }
     
   }
@@ -168,7 +168,6 @@ section {
   }
   .container::after {
     content: "";
-    position: absolute;
     width: 695px;
     height: 2px;
     opacity: 0.5;
@@ -232,38 +231,32 @@ section {
   }
   .column:hover {
     background-color: #ffe26d;
-    /*.button {
-      @extend .button:hover;
-    }*/
   }
 }
 
-
-/*id=pricing*/
 .pricing {
   height: 500px;
+  .pricing__column{
+    height: 200px;
+  }
   .pricing__header {
     font-size: 14.5px;
     font-weight: bold;
     font-family: Montserrat;
-    margin-bottom: 22px;
   }
   .pricing__cost {
     font-size: 14.5px;
     color: rgba(4, 4, 5, 0.39);
     font-family: Montserrat;
-    margin-bottom: 22px;
   }
   .pricing__about {
     font-family: Helvetica;
     font-size: 10.5px;
     color: #040405;
-    margin-bottom: 22px;
     line-height: 2.1;
     font-weight: 700;
   }
   .border{
-
     border-right: #efefef 1px solid;
   }
   .table {
@@ -272,7 +265,7 @@ section {
   height: 28px;}
   
 }}
-/*id=video*/
+
 .video {
   background-color: #62497c;
   color: #fefefe;
@@ -310,7 +303,7 @@ section {
     }
   }
 }
-/*id=team*/
+
 .team {
   height: 780px;
   background-color: #fefefe;
@@ -406,11 +399,9 @@ section {
 .box{position: relative;
   text-align: center; 
   .blog__column {
-    /*justify-content: space-between;*/
     display: inline-block;
     text-align: center;
     width: 33%;
-  
     img {
       margin-bottom: 36px;
     }
