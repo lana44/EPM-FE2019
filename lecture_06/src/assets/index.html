@@ -13,16 +13,16 @@
 
 <body>
         <section id="home" class="home">
-
+                        
                 <img src="img/image.jpg" srcset="img/image@2x.jpg 2x,
              img/image@3x.jpg 3x" class="Image" alt="zippy mockup">
-                <div class="container">
-
-                        <header>
+                
+             <div class="container box__column">
+                        <header class="box">
 
                                 <div class="logo">zippy</div>
                                 <nav class="slider__menu">
-                                        <ul class="menu">
+                                        <ul class="menu box">
                                                 <li><a href="#home" class="active">home</a></li>
                                                 <li><a href="#project">projects</a></li>
                                                 <li><a href="#pricing">pricing</a></li>
@@ -34,20 +34,30 @@
 
                         </header>
 
-                        <div class="slider__item">
+                        <div class="slider__item flex__column">
+
                                 <h3 class="slider__title">One page promising to fill all your needs!</h3>
-                                        <h2 class="slider__text">This is Photoshop's version of Lorem Ipsum. Proin
-                                                gravida nibh vel velit auctor
-                                                aliquet.</h2>
-                                        <button class="button left">learn more</button>
-                                        <button class="button right">learn more</button>
+                                <h2 class="slider__text">This is Photoshop's version of Lorem Ipsum. Proin
+                                        gravida nibh vel velit auctor
+                                        aliquet.</h2>
+                                <div><button class="button left">learn more</button>
+                                        <button class="button right">learn more</button></div></div>
+                                        <div>
+
+                                        
                                         <ul id="dots" class="dots">
-                                                <li></li>
-                                                <li class="active"></li>
-                                                <li></li>
-                                                <li></li>
-                                        </ul>
-                        </div>
+                                                        <li> </li>
+                                                        <li class="active"> </li>
+                                                        <li> </li>
+                                                        <li> </li>
+                                                </ul>
+                                </div>
+                        
+                                
+                        
+
+
+
 
                 </div>
 
@@ -198,42 +208,45 @@
         </section>
 
         <section id="pricing" class="pricing">
+                <div class="container">
+                        <h2 class="section__title">Pricing Table</h2>
+                        <div class="table box">
+                                <div class="pricing__column ">
+                                        <p class="pricing__header">standart plan</p>
+                                        <p class="pricing__cost">Free</p>
+                                        <p class="pricing__about">2 GB Available <br>
+                                                15 max. contacts<br>
+                                                30 Messages/month<br>
+                                                Disgusting Ads
+                                        </p>
 
-                <h2 class="section__title">Pricing Table</h2>
-                <table class="table">
-                        <tr class="pricing__header">
-                                <td>standart plan</td>
-                                <td>business plan</td>
-                                <td class="border__hidden">premium plan</td>
-                        </tr>
-                        <tr class="pricing__cost">
-                                <td>Free</td>
-                                <td>19$/month</td>
-                                <td class="border__hidden">14$/month</td>
-                        </tr>
-                        <tr class="pricing__about">
-                                <td>2 GB Available <br>
-                                        15 max. contacts<br>
-                                        30 Messages/month<br>
-                                        Disgusting Ads
-                                </td>
-                                <td>10 GB Available<br>
-                                        75 max. contacts<br>
-                                        120 Messages/month<br>
-                                        Ads Free</td>
-                                <td class="border__hidden">100 GB Available<br>
-                                        Unlimited Contacts<br>
-                                        Unlimited Messages/month<br>
-                                        Ads Free</td>
-                        </tr>
-                        <tr>
-                                <td> <button class="button">buy</button></td>
-                                <td> <button class="button">buy</button></td>
-                                <td class="border__hidden"> <button class="button">buy</button></td>
-                        </tr>
+                                        <p> <button class="button">buy</button></p>
+                                </div>
+                                <div class="border"></div>
+                                <div class="pricing__column">
+                                        <p class="pricing__header">business plan</p>
+                                        <p class="pricing__cost">19$/month</p>
+                                        <p class="pricing__about">10 GB Available<br>
+                                                75 max. contacts<br>
+                                                120 Messages/month<br>
+                                                Ads Free</p>
 
-                </table>
 
+                                        <p> <button class="button">buy</button></p>
+                                </div>
+                                <div class="border"></div>
+                                <div class="pricing__column" class="pricing__about">
+                                        <p class="pricing__header">premium plan</p>
+                                        <p class="pricing__cost">14$/month</p>
+                                        <p class="pricing__about">100 GB Available<br>
+                                                Unlimited Contacts<br>
+                                                Unlimited Messages/month<br>
+                                                Ads Free</p>
+
+                                        <p class="border__hidden"> <button class="button">buy</button></p>
+                                </div>
+                        </div>
+                </div>
         </section>
 
         <section id="video" class="video">
@@ -293,7 +306,8 @@
                                 </div>
                         </div>
                         <div class="box">
-                                <div class="team__person title__column"><img src="img/team4.jpg" alt="Marketing Manager">
+                                <div class="team__person title__column"><img src="img/team4.jpg"
+                                                alt="Marketing Manager">
                                         <h3>Jimmy Smith</h3>
                                         <p>Marketing Manager</p>
                                 </div>
@@ -328,12 +342,14 @@
         <section id="newsletter" class="newsletter">
                 <div class="image-container">
                         <img src="img/news.jpg" alt="newsletter">
-                        <div class="container after">
+                        <div class="container news">
                                 <h2 class="section__title">Newsletter Signup</h2>
                                 <form class="news__form contact__form" action="#" method="post" name="contact_form">
-                                        <input class="news__input" type="email" name="email" placeholder="abc@example.com">
+                                        <input class="news__input" type="email" name="email"
+                                                placeholder="abc@example.com">
                                         <button class="button" type="submit" name="button">sign up</button><br>
-                                        <button class="button button__right" type="submit" name="button">sign up</button>
+                                        <button class="button button__right" type="submit" name="button">sign
+                                                up</button>
                                 </form>
                         </div>
                 </div>
@@ -344,53 +360,59 @@
         <section id="blog" class="blog">
                 <div class="container">
                         <h2 class="section__title">Blog</h2>
-                        <div class="blog__column">
-                                <figure>
+                        <div class="box">
+                                <div class="blog__column blog1" tabindex="0">
+
                                         <img src="img/blog1.jpg" alt="blog">
-                                        <figcaption>
-                                                <h3 class="title__column">Lorem ipsum dolor sit amet</h3>
-                                                <p class="date item__mini">15 Jan, 2015</p>
-                                                <p class="item__mini">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                                        elit. Pellentesque
-                                                        vel odio vel felis
-                                                        placerat pharetra ut vitae felis. </p>
-                                        </figcaption>
 
-                                </figure>
-                                <button class="button">read more</button>
-                        </div>
-                        <div class="blog__column">
-                                <figure>
+                                        <h3 class="title__column">Lorem ipsum dolor sit amet1</h3>
+                                        <p class="date item__mini">15 Jan, 2015</p>
+                                        <p class="item__mini">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                elit. Pellentesque
+                                                vel odio vel felis
+                                                placerat pharetra ut vitae felis. </p>
+                                        <button class="button">read more</button>
+                                </div>
+
+
+
+
+                                <div class="blog__column blog2" tabindex="0">
+
                                         <img src="img/blog2.jpg" alt="blog">
-                                        <figcaption>
-                                                <h3 class="title__column">Lorem ipsum dolor sit amet</h3>
-                                                <p class="date item__mini">15 Jan, 2015</p>
-                                                <p class="item__mini">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                                        elit. Pellentesque
-                                                        vel odio vel felis
-                                                        placerat pharetra ut vitae felis. </p>
-                                        </figcaption>
 
-                                </figure>
-                                <button class="button">read more</button>
-                        </div>
+                                        <h3 class="title__column">Lorem ipsum dolor sit amet2</h3>
+                                        <p class="date item__mini">15 Jan, 2015</p>
+                                        <p class="item__mini">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                elit. Pellentesque
+                                                vel odio vel felis
+                                                placerat pharetra ut vitae felis. </p>
+                                        <button class="button">read more</button>
 
-                        <div class="blog__column">
-                                <figure>
+
+
+
+                                </div>
+
+                                <div class="blog__column blog3" tabindex="0">
+
                                         <img src="img/blog3.jpg" alt="blog">
-                                        <figcaption>
-                                                <h3 class="title__column">Lorem ipsum dolor sit amet</h3>
-                                                <p class="date item__mini">15 Jan, 2015</p>
-                                                <p class="item__mini">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                                        elit. Pellentesque
-                                                        vel odio vel felis
-                                                        placerat pharetra ut vitae felis. </p>
-                                        </figcaption>
 
-                                </figure>
-                                <button class="button">read more</button>
+                                        <h3 class="title__column">Lorem ipsum dolor sit amet3</h3>
+                                        <p class="date item__mini">15 Jan, 2015</p>
+                                        <p class="item__mini">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                                elit. Pellentesque
+                                                vel odio vel felis
+                                                placerat pharetra ut vitae felis. </p>
+                                        <button class="button">read more</button>
+
+
+
+
+                                </div>
                         </div>
                 </div>
+
         </section>
 
 
@@ -401,32 +423,33 @@
 
                 <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7cc5d451c2c1cfead25a6afb715ce9b9a4370766c287cb06e27fddff58234738&amp;source=constructor"
                         width="693" height="653"></iframe>
-                
-                        <form class="contact__form" action="#" method="post" name="contact_form">
-                                <ul class="contact__ul">
-                                        <li>
-                                                <h2 class="section__title">Contact</h2>
-                                        </li>
-                                        <li>
-                                                <label for="name">Name</label>
-                                                <input class="contact__input" type="text" name="name" id="name" />
-                                        </li>
-                                        <li>
-                                                <label for="email">email address</label>
-                                                <input class="contact__input" type="email" name="email" id="email" />
-                                        </li>
-                                        <li>
-                                                <label for="subject">subject</label>
-                                                <input class="contact__input" type="text" name="subject" id="subject" />
-                                        </li>
-                                        <li>
-                                                <label for="message">message</label>
-                                                <input class="textarea contact__input" type="text" name="message" id="message">
-                                        </li>
-                                </ul>
-                                <button class="button" type="submit">send</button>
-                        </form>
-                
+
+                <form class="contact__form" action="#" method="post" name="contact_form">
+                        <ul class="contact__ul">
+
+                                <li>
+                                        <h2 class="section__title">Contact</h2>
+                                </li>
+                                <li>
+                                        <label for="name">Name</label>
+                                        <input class="contact__input" type="text" name="name" id="name" />
+                                </li>
+                                <li>
+                                        <label for="email">email address</label>
+                                        <input class="contact__input" type="email" name="email" id="email" />
+                                </li>
+                                <li>
+                                        <label for="subject">subject</label>
+                                        <input class="contact__input" type="text" name="subject" id="subject" />
+                                </li>
+                                <li>
+                                        <label for="message">message</label>
+                                        <input class="textarea contact__input" type="text" name="message" id="message">
+                                </li>
+                        </ul>
+                        <button class="button" type="submit">send</button>
+                </form>
+
 
         </section>
 
@@ -443,12 +466,18 @@
                                 <div class="footer__column">
                                         <p class="footer__title">Follow us</p>
                                         <ul class="footer__contact">
-                                                <li><a href=#><i class="icon-behance footer__icon"></i></a></li>
-                                                <li> <a href=#><i class="icon-twitter footer__icon"></i></a></li>
-                                                <li><a href=#> <i class="icon-linkedin footer__icon"></i></a></li>
-                                                <li><a href=#><i class="icon-facebook footer__icon"></i></a></li>
-                                                <li><a href=#><i class="icon-gplus footer__icon"></i></a></li>
-                                                <li> <a href=#><i class="icon-tumblr footer__icon"></i></a></li>
+                                                <div class="box">
+                                                        <li><a href=#><i class="icon-behance footer__icon"></i></a></li>
+                                                        <li> <a href=#><i class="icon-twitter footer__icon"></i></a>
+                                                        </li>
+                                                        <li><a href=#> <i class="icon-linkedin footer__icon"></i></a>
+                                                        </li>
+                                                
+                                                        <li><a href=#><i class="icon-facebook footer__icon"></i></a>
+                                                        </li>
+                                                        <li><a href=#><i class="icon-gplus footer__icon"></i></a></li>
+                                                        <li> <a href=#><i class="icon-tumblr footer__icon"></i></a></li>
+                                                </div>
                                         </ul>
                                 </div>
                                 <div class="footer__column">

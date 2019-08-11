@@ -1,0 +1,121 @@
+*:hover{
+    transition-duration: 1.5s;
+}
+
+.home .slider__menu .menu li:hover{
+    transform: scale(1.05);
+    transition-duration: 0.2s;
+}
+
+
+.footer__contact li{
+    &:hover{
+transform: rotateY(360deg);}}
+
+.after:hover{
+    -webkit-animation: pulsing 2s infinite;
+  animation: pulsing 2s infinite;
+}
+
+@-webkit-keyframes pulsing {
+    0% {
+      -webkit-transform: scale(0.5, 0.5);
+      transform: scale(0.5, 0.5)
+    }
+    50% {
+      -webkit-transform: scale(1.0, 1.0);
+      transform: scale(1.0, 1.0);
+    }
+    100% {
+      -webkit-transform: scale(0.5, 0.5);
+      transform: scale(0.5, 0.5);
+    }
+  }
+  
+  @keyframes pulsing {
+    0% {
+      -webkit-transform: scale(0.5, 0.5);
+      transform: scale(0.5, 0.5)
+    }
+    50% {
+      -webkit-transform: scale(1.0, 1.0);
+      transform: scale(1.0, 1.0);
+    }
+    100% {
+      -webkit-transform: scale(0.5, 0.5);
+      transform: scale(0.5, 0.5);
+    }
+  }
+
+  .pricing__column:hover{
+    animation-name: sizechange, osx;
+    animation-duration: 0.5s, 2s;
+    animation-timing-function: linear, ease;
+    animation-delay: 0s, 0.5s;
+    animation-fill-mode: forwards;
+  }
+  @keyframes sizechange {
+    from{transform: none;}
+    to{transform: scale(1.1);}
+  }
+  @keyframes osx {
+    from{transform: none;}
+    to{transform:rotate3d(1, 0, 0, 360deg);}
+    
+  }
+
+.slider__title{
+  animation: fade-in 1s linear;
+    animation-name: left;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+}
+
+.slider__text{
+  animation: fade-in 1s linear;
+  animation-name: right;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+}
+
+.home .button{
+  animation: fade-in 1s linear;
+  animation-name: top;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 2s;
+}
+@keyframes left {
+  0% {margin-left: -1500px;}
+ 25% {margin-left: -800px;}
+ 50% {margin-left: -500px;}
+ 75% {margin-left: -200px;}
+ 100% {margin-left: 0px;}  
+  }
+
+  @keyframes right {
+    0% {margin-left: 1500px;}
+   25% {margin-left: 800px;}
+   50% {margin-left: 500px;}
+   75% {margin-left: 200px;}
+   100% {margin-left: 0px;}  
+    }
+
+    @keyframes top {
+      0% {margin-top: 1000px;}
+     25% {margin-top: 800px;}
+     50% {margin-top: 500px;}
+     75% {margin-top: 200px;}
+     100% {margin-top: 0px;}  
+      }
+
+  @keyframes         fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+
+
+  .blog__column:focus{position: absolute;
+    left:33%;
+    transform: scale(1.1);
+    transition-duration: 0.3s;}
+
