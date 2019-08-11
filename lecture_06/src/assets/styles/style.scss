@@ -5,20 +5,9 @@
 .pricing__header {
   text-transform: uppercase;
 }
+.image__container {
+  position: relative;}
 
-.clear-fix::after {
-  content: "";
-  display: block;
-  clear: both;
-  height: 0px;
-  visibility: hidden;
-}
-
-section {
-  width: 1400px;
-  position: relative;
-  margin: 0 auto;
-}
 
 .box {
   display: flex;
@@ -26,39 +15,44 @@ section {
   justify-content: space-between;
 }
 
-.box__column, .pricing__column{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.flex__column{
+.box__column,
+.pricing__column {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+.flex__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+section {
+  width: 1400px;
+  position: relative;
+  margin: 0 auto;
+
+}
 .container {
-  position: absolute;
-  left: 352px;
-  right: 352px;
+  position: relative;
+margin: 0 352px;
+padding-bottom: 100px;
+padding-top: 70px;
 }
-/*header {
-  margin-bottom: 114px;
-}*/
 
-/*id=home*/
 .home {
-
   color: #ffffff;
   position: relative;
   margin: 0 auto;
-  padding: 0px;
-  .box__column{
+
+  .box__column {
     position: absolute;
-  height: 85%;
+    height: 85%;
   }
   .container {
     top: 50px;
+    padding-top: 0;
+    width: 696px;
   }
   .dots {
     list-style: none;
@@ -82,7 +76,7 @@ section {
   .slider__item {
     height: 246px;
     margin-bottom: 40px;
-    
+
     .slider__title {
       font-family: Montserrat;
       font-size: 39px;
@@ -97,10 +91,9 @@ section {
       margin-left: 1500px;
       width: 472px;
     }
-   .button{
-      margin-top:400px;
+    .button {
+      margin-top: 400px;
     }
-    
   }
   .logo {
     font-family: Montserrat;
@@ -115,7 +108,6 @@ section {
     .menu {
       list-style-type: none;
       text-transform: uppercase;
-      
       .active {
         color: #ffe26d;
       }
@@ -134,9 +126,8 @@ section {
     }
   }
 }
-/*id=welcome*/
+
 .welcome {
-  height: 837px;
   .welcome__text {
     width: 436px;
     height: 165px;
@@ -147,10 +138,6 @@ section {
     color: #040405;
     margin-top: 30px;
     word-wrap: break-word;
-    float: left;
-  }
-  .welcome__aside {
-    float: right;
   }
   .umbrella__icon {
     width: 188px;
@@ -235,8 +222,7 @@ section {
 }
 
 .pricing {
-  height: 500px;
-  .pricing__column{
+  .pricing__column {
     height: 200px;
   }
   .pricing__header {
@@ -249,26 +235,34 @@ section {
     color: rgba(4, 4, 5, 0.39);
     font-family: Montserrat;
   }
+  .pricing__tema{
+    line-height: 2.1;
+  }
   .pricing__about {
     font-family: Helvetica;
     font-size: 10.5px;
     color: #040405;
-    line-height: 2.1;
     font-weight: 700;
   }
-  .border{
+  .border {
     border-right: #efefef 1px solid;
   }
   .table {
     text-align: center;
-  .button{width: $btn_small;
-  height: 28px;}
-  
-}}
+    .button {
+      width: $btn_small;
+      height: 28px;
+      margin: 0 auto;
+    }
+  }
+}
 
 .video {
   background-color: #62497c;
   color: #fefefe;
+.section__title{
+  padding-top: 70px;
+}
   .box {
     justify-content: center;
   }
@@ -305,7 +299,6 @@ section {
 }
 
 .team {
-  height: 780px;
   background-color: #fefefe;
   .team__person {
     p {
@@ -331,7 +324,6 @@ section {
 }
 
 .life {
-  height: 783px;
   background-color: #efefef;
   .life__image {
     margin-bottom: 13px;
@@ -346,15 +338,16 @@ section {
 }
 
 .newsletter {
-  .image-container {position: relative;}
-  .image-container .news{
+  .image__container .news {
     position: absolute;
     top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
+    margin: 0 auto;
   }
-  .section__title {color: #ffffff;}
+  .section__title {
+    color: #ffffff;
+  }
   .news__form {
     text-align: center;
     .news__input {
@@ -369,15 +362,17 @@ section {
         padding-left: 15px;
       }
     }
-    .button__right {
-      float: right;
-      margin-right: 427px;
-    }
+.box{
+  justify-content: flex-end;
+  width: 546px;
+  margin: 0 auto;
+}
     .button {
       width: 132px;
       height: 55px;
       margin-bottom: 42px;
       background-color: #ffe26d;
+      
       &:hover {
         background-color: #62497c;
         color: #fefefe;
@@ -387,42 +382,42 @@ section {
 }
 
 .blog {
-  height: 640px;
   .button {
     background-color: #ececec;
   }
   .button:hover {
     background-color: #ffe26d;
-    margin-bottom: 88px;
     color: #323232;
   }
-.box{position: relative;
-  text-align: center; 
-  .blog__column {
-    display: inline-block;
+  .box {
+    position: relative;
     text-align: center;
-    width: 33%;
-    img {
-      margin-bottom: 36px;
+    .blog__column {
+      display: inline-block;
+      text-align: center;
+      width: 33%;
+      img {
+        margin-bottom: 36px;
+      }
+      h3 {
+        color: #040405;
+        padding: 0 19px 13px 19px;
+        line-height: normal;
+      }
+      .date {
+        margin-bottom: 16px;
+      }
+      p {
+        margin-bottom: 29px;
+        padding: 0 10px;
+      }
     }
-    h3 {
-      color: #040405;
-      padding: 0 19px 13px 19px;
-      line-height: normal;
-    }
-    .date {
-      margin-bottom: 16px;
-    }
-    p {
-      margin-bottom: 29px;
-      padding: 0 10px;
-      
-    }
-  }}}
-
+  }
+}
 
 .contact {
   background-color: #ffe26d;
+
   iframe {
     float: left;
     margin-right: 43.4px;
@@ -434,19 +429,20 @@ section {
 .contact__form {
   .section__title {
     text-align: left;
+    padding-top: 70px;
   }
   .contact__ul {
     list-style-type: none;
     list-style-position: outside;
     margin: 10px;
-      .contact__input {
-        width: 311px;
-        height: 44px;
-        border: none;
-        margin-bottom: 21px;
-      }
-      .textarea {
-        height: 145px;
+    .contact__input {
+      width: 311px;
+      height: 44px;
+      border: none;
+      margin-bottom: 21px;
+    }
+    .textarea {
+      height: 145px;
     }
   }
   label {
@@ -471,25 +467,26 @@ section {
 
 .footer {
   color: #040405;
-  padding-top: 78px;
   width: 1400px;
   text-align: center;
+  margin: 0 auto;
   .box {
     justify-content: space-around;
     margin-bottom: 10px;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     .footer__column {
       width: 140px;
     }
-    .footer__icon{
+    .footer__icon {
       margin: 10px 5px;
-    color: #000000;
-    font-size: 16px;
-      &:hover{
-      color: #62497c;
-    }}
+      color: #000000;
+      font-size: 16px;
+      &:hover {
+        color: #62497c;
+      }
+    }
   }
-    a {
+  a {
     text-decoration: none;
     color: #040405;
   }
