@@ -6,9 +6,9 @@
         <title>Zippy mockup - Zeplin</title>
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,400&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="sass/reset.css">
-        <link rel="stylesheet" href="sass/fontello.css">
-        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="dist/css/reset.css">
+        <link rel="stylesheet" href="dist/css/fontello.css">
+        <link rel="stylesheet" href="dist/css/style.css" />
 </head>
 
 <body>
@@ -33,7 +33,7 @@
                                         </ul>
                                 </nav>
                         </header>
-                        <div class="slider__item flex__column">
+                        <div class="slider__item box__column">
                                 <h3 class="slider__title">One page promising to fill all your needs!</h3>
                                 <h2 class="slider__text">This is Photoshop's version of Lorem Ipsum. Proin
                                         gravida nibh vel velit auctor
@@ -48,7 +48,7 @@
                                                 <li class="dots__item"> </li>
                                         </ul>
                                 </div>
-                        
+                        </div>
         </section>
 
 
@@ -186,38 +186,38 @@
                 <div class="container">
                         <h2 class="section__title">Pricing Table</h2>
                         <div class="table box">
-                                <div class="pricing__column column">
+                                <div class="column">
                                         <p class="pricing__header title__column">standart plan</p>
                                         <p class="pricing__cost">Free</p>
                                         <div class="pricing__tema column__decription">
-                                                <p class="pricing__about">2 GB Available </p>
-                                                <p class="pricing__about"> 15 max. contacts</p>
-                                                <p class="pricing__about"> 30 Messages/month</p>
-                                                <p class="pricing__about"> Disgusting Ads</p>
+                                                <p class="item__mini">2 GB Available </p>
+                                                <p class="item__mini"> 15 max. contacts</p>
+                                                <p class="item__mini"> 30 Messages/month</p>
+                                                <p class="item__mini"> Disgusting Ads</p>
                                         </div>
                                         <button class="button btn_yellow">buy</button>
                                 </div>
                                 <div class="border"></div>
-                                <div class="pricing__column column">
+                                <div class="column">
                                         <p class="pricing__header title__column">business plan</p>
                                         <p class="pricing__cost">19$/month</p>
                                         <div class="pricing__tema column__decription">
-                                                <p class="pricing__about">10 GB Available</p>
-                                                <p class="pricing__about"> 75 max. contacts</p>
-                                                <p class="pricing__about"> 120 Messages/month</p>
-                                                <p class="pricing__about"> Ads Free</p>
+                                                <p class="item__mini">10 GB Available</p>
+                                                <p class="item__mini"> 75 max. contacts</p>
+                                                <p class="item__mini"> 120 Messages/month</p>
+                                                <p class="item__mini"> Ads Free</p>
                                         </div>
                                         <button class="button btn_yellow">buy</button>
                                 </div>
                                 <div class="border"></div>
-                                <div class="pricing__column column">
+                                <div class="column">
                                         <p class="pricing__header title__column">premium plan</p>
                                         <p class="pricing__cost">14$/month</p>
                                         <div class="pricing__tema column__decription">
-                                                <p class="pricing__about">100 GB Available</p>
-                                                <p class="pricing__about"> Unlimited Contacts</p>
-                                                <p class="pricing__about"> Unlimited Messages/month</p>
-                                                <p class="pricing__about"> Ads Free</p>
+                                                <p class="item__mini">100 GB Available</p>
+                                                <p class="item__mini"> Unlimited Contacts</p>
+                                                <p class="item__mini"> Unlimited Messages/month</p>
+                                                <p class="item__mini"> Ads Free</p>
                                         </div>
                                         <button class="button btn_yellow">buy</button>
                                 </div>
@@ -407,8 +407,7 @@
                                                 </li>
                                                 <li class="contact__item">
                                                         <label class="form__label" for="message">message</label>
-                                                        <textarea class="textarea contact__input" type="text"
-                                                                name="message" id="message"></textarea>
+                                                        <textarea class="textarea contact__input" name="message" id="message"></textarea>
                                                 </li>
                                         </ul>
                                         <button class="button btn_violet" type="submit">send</button>

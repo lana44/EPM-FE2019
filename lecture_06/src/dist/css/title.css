@@ -19,7 +19,8 @@
   color: #62497c;
   text-transform: uppercase; }
 
-.item__mini, .footer a {
+.item__mini,
+.footer a {
   font-family: Helvetica;
   font-size: 13.5px;
   line-height: 1.74;

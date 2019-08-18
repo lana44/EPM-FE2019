@@ -2,14 +2,7 @@
 @import "btn";
 @import "animate";
 @import "variables";
-
-.pricing__header {
-  text-transform: uppercase;
-}
-
-.image__container {
-  position: relative;
-}
+@import "icon";
 
 .box {
   display: flex;
@@ -17,14 +10,7 @@
   justify-content: space-between;
 }
 
-.box__column,
-.pricing__column {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.flex__column {
+.box__column {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -32,28 +18,25 @@
 
 .section {
   width: 1400px;
-  position: relative;
   margin: 0 auto;
-
 }
 
 .container {
-  position: relative;
   margin: 0 auto;
   width: 700px;
   padding: 83px 0;
 }
 
 .home {
-  color: #ffffff;
-  background-image: url(../assets/img/image.jpg);
+  color: $white__color;
+  background-image: url(../../assets/img/image.jpg);
   background-repeat: no-repeat;
-.box__column{
-  height: 600px;
-}
-.container {
-  padding: 41px 0;
-}
+  .box__column {
+    height: 600px;
+  }
+  .container {
+    padding: 41px 0;
+  }
   .dots {
     list-style: none;
     padding: 0px;
@@ -65,13 +48,13 @@
       width: 7px;
       height: 7px;
       margin-right: 7px;
-      background: #ffffff;
+      background: $white__color;
       cursor: pointer;
       opacity: 0.5;
     }
 
     li.active {
-      background: #ffffff;
+      background: $white__color;
       opacity: 1;
     }
   }
@@ -80,7 +63,7 @@
     height: 243px;
 
     .slider__title {
-      font-family: Montserrat;
+      font-family: $main__font;
       font-size: 39px;
       font-weight: bold;
       margin-left: -1500px;
@@ -88,7 +71,7 @@
     }
 
     .slider__text {
-      font-family: Roboto;
+      font-family: $second__font;
       font-size: 19px;
       font-weight: 100;
       margin-left: 1500px;
@@ -101,7 +84,7 @@
   }
 
   .logo {
-    font-family: Montserrat;
+    font-family: $main__font;
     font-size: 29.5px;
     font-weight: bold;
     line-height: 0.24;
@@ -113,23 +96,21 @@
     list-style-type: none;
     text-transform: uppercase;
 
-   
-
     .menu__item {
       display: inline-block;
 
       .menu__a {
-        font-family: Montserrat;
+        font-family: $main__font;
         font-size: 10.5px;
         font-weight: bold;
         line-height: 0.67;
         text-align: left;
-        color: #ffffff;
+        color: $white__color;
         text-decoration: none;
         padding: 15px;
       }
       .active {
-        color: #ffe26d;
+        color: $yellow__color;
       }
     }
   }
@@ -138,10 +119,10 @@
 .welcome {
   .welcome__text {
     width: 436px;
-    font-family: Roboto;
+    font-family: $second__font;
     font-size: 29.5px;
     font-weight: 100;
-    color: #040405;
+    color: $main__color;
     margin-top: 30px;
   }
 
@@ -167,13 +148,13 @@
     width: 695px;
     height: 2px;
     opacity: 0.5;
-    background-color: rgba(4, 4, 5, 0.5);
+    background-color: $grey__color;
     margin-top: 58px;
   }
 
   .welcome__icon {
     display: inline-block;
-    background-color: #62497c;
+    background-color: $violet__color;
     background-position: 50% 50%;
     border-radius: 50%;
     margin-bottom: 20px;
@@ -217,7 +198,7 @@
   .title__column {
     text-align: left;
     margin-bottom: 22px;
-    color: #040405;
+    color: $main__color;
   }
 
   .item__mini {
@@ -229,41 +210,33 @@
   .button {
     margin-bottom: 47px;
     &:hover {
-      background-color: #62497c;
+      background-color: $violet__color;
     }
   }
 
   .column:hover {
-    background-color: #ffe26d;
+    background-color: $yellow__color;
   }
 }
 
 .pricing {
-  .pricing__column {
-    height: 200px;
-  }
-
   .pricing__header {
-    font-size: 14.5px;
-    font-weight: bold;
-    font-family: Montserrat;
     color: $main__color;
   }
 
   .pricing__cost {
     font-size: 14.5px;
     color: rgba(4, 4, 5, 0.39);
-    font-family: Montserrat;
+    font-family: $main__font;
   }
 
   .pricing__tema {
     line-height: 2.1;
   }
 
-  .pricing__about {
-    font-family: Helvetica;
+  .item__mini {
     font-size: 10.5px;
-    color: #040405;
+    color: $main__color;
     font-weight: 700;
   }
 
@@ -281,7 +254,7 @@
 }
 
 .video {
-  background-color: #62497c;
+  background-color: $violet__color;
   color: #fefefe;
   padding: 73px 0;
 
@@ -295,7 +268,7 @@
 
     .video__item {
       margin: 0 18px;
-      font-family: Montserrat;
+      font-family: $main__font;
       font-size: 10.5px;
       font-weight: bold;
       text-transform: uppercase;
@@ -361,13 +334,13 @@
     padding: 28px 11px;
 
     &:hover {
-      background-color: #62497c;
+      background-color: $violet__color;
     }
   }
 }
 
 .newsletter {
-  background-image: url(../assets/img/news.jpg);
+  background-image: url(../../assets/img/news.jpg);
   background-repeat: no-repeat;
 
   .news__form {
@@ -380,7 +353,7 @@
       height: 50px;
 
       &::placeholder {
-        font-family: Montserrat;
+        font-family: $main__font;
         font-size: 19px;
         color: #d8d8d8;
         padding-left: 15px;
@@ -399,7 +372,7 @@
       margin-bottom: 42px;
 
       &:hover {
-        background-color: #62497c;
+        background-color: $violet__color;
         color: #fefefe;
       }
     }
@@ -408,7 +381,7 @@
 
 .blog {
   .button:hover {
-    background-color: #ffe26d;
+    background-color: $yellow__color;
     color: #323232;
   }
 
@@ -420,13 +393,14 @@
       display: inline-block;
       text-align: center;
       width: 33%;
+      background-color: white;
 
       .blog__img {
         margin-bottom: 36px;
       }
 
       .title__column {
-        color: #040405;
+        color: $main__color;
         padding: 0 19px 13px 19px;
         line-height: normal;
       }
@@ -443,7 +417,7 @@
 }
 
 .contact {
-  background-color: #ffe26d;
+  background-color: $yellow__color;
   .box {
     justify-content: end;
   }
@@ -461,7 +435,6 @@
   .section__title {
     text-align: left;
     padding-top: 70px;
-    
   }
 
   .contact__list {
@@ -488,7 +461,7 @@
   }
 
   .form__label {
-    font-family: Montserrat;
+    font-family: $main__font;
     font-size: 10.5px;
     font-weight: bold;
     line-height: 0.67;
@@ -507,10 +480,7 @@
 }
 
 .footer {
-  color: #040405;
-  width: 1400px;
   text-align: center;
-  margin: 0 auto;
 
   .box {
     justify-content: space-around;
@@ -526,17 +496,17 @@
 
   .footer__a {
     text-decoration: none;
-    color: #040405;
+    color: $main__color;
     padding: 5px;
   }
 
   .item__mini {
-    color: #040405;
+    color: $main__color;
     display: inline-block;
   }
 
   .footer__title {
-    font-family: Montserrat;
+    font-family: $main__font;
     font-size: 10.5px;
     font-weight: bold;
     margin-bottom: 14px;

@@ -1,27 +1,34 @@
 .button {
-  height: 43px;
   border-radius: 2.9px;
   border-style: none;
   text-transform: uppercase;
   font-size: 10.5px;
   font-weight: bold;
-  line-height: 0.67;
   color: #323232;
-  padding: 20px 30px; }
+  padding: 15px 30px; }
   .button:hover {
     background-color: #62497c;
     color: white; }
 
 .btn_yellow {
   background-color: #ffe26d; }
+  .btn_yellow:hover {
+    background-color: #62497c;
+    color: white; }
 
 .btn_grey {
   background-color: #ececec; }
+  .btn_grey:hover {
+    background-color: #ffe26d;
+    color: #323232; }
 
 .btn_violet {
   background-color: #62497c; }
 
 .btn__white {
   background-color: #fefefe; }
+  .btn__white:hover {
+    background-color: #62497c;
+    color: white; }
 
 /*# sourceMappingURL=btn.css.map */

@@ -12,25 +12,12 @@
   -webkit-animation: pulsing 2s infinite;
   animation: pulsing 2s infinite; }
 
-@-webkit-keyframes pulsing {
-  0% {
-    -webkit-transform: scale(0.5, 0.5);
-    transform: scale(0.5, 0.5); }
-  50% {
-    -webkit-transform: scale(1, 1);
-    transform: scale(1, 1); }
-  100% {
-    -webkit-transform: scale(0.5, 0.5);
-    transform: scale(0.5, 0.5); } }
 @keyframes pulsing {
   0% {
-    -webkit-transform: scale(0.5, 0.5);
     transform: scale(0.5, 0.5); }
   50% {
-    -webkit-transform: scale(1, 1);
     transform: scale(1, 1); }
   100% {
-    -webkit-transform: scale(0.5, 0.5);
     transform: scale(0.5, 0.5); } }
 .pricing__column:hover {
   animation-name: sizechange, osx;
@@ -52,21 +39,18 @@
 .slider__title {
   animation: fade-in 1s linear;
   animation-name: left;
-  animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-duration: 2s; }
 
 .slider__text {
   animation: fade-in 1s linear;
   animation-name: right;
-  animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-duration: 2s; }
 
 .home .button {
   animation: fade-in 1s linear;
   animation-name: top;
-  animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-duration: 2s; }
 
@@ -108,27 +92,56 @@
     opacity: 0.1; }
   100% {
     opacity: 1; } }
-   /* .blog1:focus{
-      animation-name: blog__left, blog__size;
-    animation-duration: 0.5s, 2s;
-    animation-timing-function: linear, ease;
-    animation-delay: 0s, 0.5s;
-    animation-fill-mode: forwards;
-    }
+.blog1:focus {
+  animation-name: blog__left, blog__size;
+  animation-duration: 1s;
+  animation-timing-function: linear, ease;
+  animation-delay: 0s, 1s;
+  animation-fill-mode: forwards; }
 
-    @keyframes blog__left {
-      0% {transform: translateX(10%);}
-     25% {transform: translateX(30%);}
-     50% {transform: translateX(50%);}
-     75% {transform: translateX(70%);}
-     100% {transform: translateX(100%);}  
-      }
+@keyframes blog__left {
+  0% {
+    transform: translateX(10%); }
+  25% {
+    transform: translateX(30%); }
+  50% {
+    transform: translateX(50%); }
+  75% {
+    transform: translateX(70%); }
+  100% {
+    transform: translateX(100%); } }
+@keyframes blog__size {
+  from {
+    transform: translateX(100%); }
+  to {
+    transform: translateX(100%) scale(1.1); } }
+.blog2:focus {
+  animation-name: sizechange;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards; }
 
-      @keyframes blog__size {
-        from{transform: none;}
-        to{transform: scale(1.1);}
-      }
+.blog3:focus {
+  animation-name: blog__right, blog__sizeright;
+  animation-duration: 1s;
+  animation-timing-function: linear, ease;
+  animation-delay: 0s, 1s;
+  animation-fill-mode: forwards; }
 
-*/
+@keyframes blog__right {
+  0% {
+    transform: translateX(-10%); }
+  25% {
+    transform: translateX(-30%); }
+  50% {
+    transform: translateX(-50%); }
+  75% {
+    transform: translateX(-70%); }
+  100% {
+    transform: translateX(-100%); } }
+@keyframes blog__sizeright {
+  from {
+    transform: translateX(-100%); }
+  to {
+    transform: translateX(-100%) scale(1.1); } }
 
 /*# sourceMappingURL=animate.css.map */
