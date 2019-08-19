@@ -1,0 +1,118 @@
+@import "variables";
+@import "title";
+@import "title";
+@import "btn";
+//@import "animate";
+@import "variables";
+@import "icon";
+
+body {
+    font-family: $main__font;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+}
+.cover-container {
+    max-width: 42em;
+    padding: 20px 0;
+}
+.home {
+    color: $white__color;
+    background-image: url(../assets/img/image.jpg);
+    background-repeat: no-repeat;}
+.menu__a {
+    font-family: $main__font;
+    font-size: 10.5px;
+    font-weight: bold;
+    line-height: 0.67;
+    text-align: left;
+    color: $white__color;
+    text-decoration: none;
+    padding: 15px;
+  }
+
+.nav{
+    text-transform: uppercase;
+}
+
+.dots {
+    list-style: none;
+    padding: 0px;
+    height: 10px;
+
+    .dots__item {
+      display: inline-block;
+      border-radius: 5px;
+      width: 7px;
+      height: 7px;
+      margin-right: 7px;
+      background: $white__color;
+      cursor: pointer;
+      opacity: 0.5;
+    }
+
+    li.active {
+      background: $white__color;
+      opacity: 1;
+    }
+  }
+
+  .slider__title {
+    font-family: $main__font;
+    font-size: 39px;
+    font-weight: bold;
+    margin-bottom: 1em;
+    max-width: 13em;
+  }
+
+  .slider__text {
+    font-family: $second__font;
+    font-size: 19px;
+    font-weight: 100;
+    margin-bottom: 2em;
+   }
+
+  .logo {
+    font-family: $main__font;
+    font-size: 29.5px;
+    font-weight: bold;
+    letter-spacing: -2.95px;
+    text-transform: uppercase;
+  }
+
+.column{
+    text-align: center;
+}
+  .welcome__icon {
+    display: inline-block;
+    background-color: $violet__color;
+    background-position: 50% 50%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+
+    .bell__icon {
+      padding: 21px 23px 20px 22px;
+    }
+
+    .envelop__icon {
+      padding: 27px 22px 26px 23px;
+    }
+
+    .drawer__icon {
+      padding: 24px 25px 23px 26px;
+    }
+
+    .bell__icon,
+    .envelop__icon,
+    .drawer__icon {
+      border-radius: 0;
+    }
+  }
+
+  .welcome__text {
+    font-family: $second__font;
+    font-size: 3.5vh;
+    font-weight: 100;
+  }

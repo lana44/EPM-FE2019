@@ -1,0 +1,147 @@
+*:hover {
+  transition-duration: 1.5s; }
+
+.home .menu .menu__item:hover {
+  transform: scale(1.15);
+  transition-duration: 0.2s; }
+
+.footer__contact li:hover {
+  transform: rotateY(360deg); }
+
+.after:focus {
+  -webkit-animation: pulsing 2s infinite;
+  animation: pulsing 2s infinite; }
+
+@keyframes pulsing {
+  0% {
+    transform: scale(0.5, 0.5); }
+  50% {
+    transform: scale(1, 1); }
+  100% {
+    transform: scale(0.5, 0.5); } }
+.pricing__column:hover {
+  animation-name: sizechange, osx;
+  animation-duration: 0.5s, 2s;
+  animation-timing-function: linear, ease;
+  animation-delay: 0s, 0.5s;
+  animation-fill-mode: forwards; }
+
+@keyframes sizechange {
+  from {
+    transform: none; }
+  to {
+    transform: scale(1.1); } }
+@keyframes osx {
+  from {
+    transform: none; }
+  to {
+    transform: rotate3d(1, 0, 0, 360deg); } }
+.slider__title {
+  animation: fade-in 1s linear;
+  animation-name: left;
+  animation-fill-mode: forwards;
+  animation-duration: 2s; }
+
+.slider__text {
+  animation: fade-in 1s linear;
+  animation-name: right;
+  animation-fill-mode: forwards;
+  animation-duration: 2s; }
+
+.home .button {
+  animation: fade-in 1s linear;
+  animation-name: top;
+  animation-fill-mode: forwards;
+  animation-duration: 2s; }
+
+@keyframes left {
+  0% {
+    margin-left: -1500px; }
+  25% {
+    margin-left: -800px; }
+  50% {
+    margin-left: -500px; }
+  75% {
+    margin-left: -200px; }
+  100% {
+    margin-left: 0px; } }
+@keyframes right {
+  0% {
+    margin-left: 1500px; }
+  25% {
+    margin-left: 800px; }
+  50% {
+    margin-left: 500px; }
+  75% {
+    margin-left: 200px; }
+  100% {
+    margin-left: 0px; } }
+@keyframes top {
+  0% {
+    margin-top: 400px; }
+  25% {
+    margin-top: 300px; }
+  50% {
+    margin-top: 200px; }
+  75% {
+    margin-top: 100px; }
+  100% {
+    margin-top: 0px; } }
+@keyframes fade-in {
+  0% {
+    opacity: 0.1; }
+  100% {
+    opacity: 1; } }
+.blog1:focus {
+  animation-name: blog__left, blog__size;
+  animation-duration: 1s;
+  animation-timing-function: linear, ease;
+  animation-delay: 0s, 1s;
+  animation-fill-mode: forwards; }
+
+@keyframes blog__left {
+  0% {
+    transform: translateX(10%); }
+  25% {
+    transform: translateX(30%); }
+  50% {
+    transform: translateX(50%); }
+  75% {
+    transform: translateX(70%); }
+  100% {
+    transform: translateX(100%); } }
+@keyframes blog__size {
+  from {
+    transform: translateX(100%); }
+  to {
+    transform: translateX(100%) scale(1.1); } }
+.blog2:focus {
+  animation-name: sizechange;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards; }
+
+.blog3:focus {
+  animation-name: blog__right, blog__sizeright;
+  animation-duration: 1s;
+  animation-timing-function: linear, ease;
+  animation-delay: 0s, 1s;
+  animation-fill-mode: forwards; }
+
+@keyframes blog__right {
+  0% {
+    transform: translateX(-10%); }
+  25% {
+    transform: translateX(-30%); }
+  50% {
+    transform: translateX(-50%); }
+  75% {
+    transform: translateX(-70%); }
+  100% {
+    transform: translateX(-100%); } }
+@keyframes blog__sizeright {
+  from {
+    transform: translateX(-100%); }
+  to {
+    transform: translateX(-100%) scale(1.1); } }
+
+/*# sourceMappingURL=animate.css.map */
