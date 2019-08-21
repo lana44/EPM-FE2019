@@ -1,11 +1,10 @@
 .section__title {
   font-family: Montserrat;
-  font-size: 44px;
+  font-size: 40px;
   font-weight: bold;
-  line-height: 0.92;
   text-align: center;
   color: #040405;
-  padding: 0 0 48px 0; }
+  margin-bottom: 3rem; }
 
 .title__white {
   color: #ffffff; }
@@ -14,8 +13,6 @@
   font-family: Montserrat;
   font-size: 14.5px;
   font-weight: bold;
-  line-height: 2.79;
-  text-align: center;
   color: #62497c;
   text-transform: uppercase; }
 
@@ -24,7 +21,6 @@
   font-family: Helvetica;
   font-size: 13.5px;
   line-height: 1.74;
-  text-align: center;
   color: rgba(4, 4, 5, 0.5); }
 
 /*# sourceMappingURL=title.css.map */

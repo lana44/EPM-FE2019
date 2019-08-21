@@ -1,0 +1,59 @@
+
+@media (min-width: 200px) {  
+.news__input, .contact__input, .textarea, .contact__form .button {
+    width: 180px;}
+    .nav, .pricing__column::after{
+        display: none;
+    }
+        .welcome__text{
+        text-align: center;
+    }
+    .life__img{
+        max-width: 20%;
+        object-fit: cover;
+    }
+    
+}
+// Малые девайсы («ландшафтные телефоны», >= 576px)
+    @media (min-width: 576px) {  
+        .news__input, .contact__input, .textarea, .contact__form .button  {
+            width: 214px;}
+            .nav, .pricing__column::after{
+                display: none;
+            }
+            .welcome__text{
+                text-align: center;
+            }}
+            
+// Средние девайсы («таблетки», >= 768px)
+@media (min-width: 768px) 
+{.news__input, .contact__input, .textarea, .contact__form .button {
+    width: 314px;}
+    .nav, .pricing__column::after{
+        display: inline-flex;
+    }
+    .welcome__text{
+        text-align: left;
+    }}  
+
+// Большие девайсы (десктопы, >= 992px)
+@media (min-width: 992px) 
+{.news__input, .contact__input, .textarea, .contact__form .button {
+    width: 314px;}
+    .nav, .pricing__column::after{
+        display: inline-flex;
+    }
+    .welcome__text{
+        text-align: left;
+    }}  
+
+// Экстрабольшие девайсы (большие десктопы, >= 1200px)
+@media (min-width: 1200px)
+ {.news__input, .contact__input, .textarea, .contact__form .button {
+    width: 414px;}
+    .nav, .pricing__column::after{
+        display: inline-flex;
+    }
+    .welcome__text{
+        text-align: left;
+    }}  

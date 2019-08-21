@@ -1,10 +1,10 @@
 .section__title {
   font-family: Montserrat;
-  font-size: 5vh;
+  font-size: 40px;
   font-weight: bold;
-  line-height: 0.92;
   text-align: center;
   color: #040405;
+  margin-bottom: 3rem;
 }
 
 .title__white {
@@ -15,10 +15,9 @@
   font-family: Montserrat;
   font-size: 14.5px;
   font-weight: bold;
-  line-height: 2.79;
-  text-align: center;
   color: #62497c;
   text-transform: uppercase;
+  
 }
 
 .item__mini,
@@ -26,6 +25,5 @@
   font-family: Helvetica;
   font-size: 13.5px;
   line-height: 1.74;
-  text-align: center;
   color: rgba(4, 4, 5, 0.5);
-}
+  }
